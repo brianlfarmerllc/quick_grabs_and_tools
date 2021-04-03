@@ -1,0 +1,52 @@
+[
+    {
+        "HTML_boilerplate_css": {
+            "prefix": "!css",
+            "body": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>",
+                "<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+                "<meta name=\"robots\" content=\"index,follow\">\r\n<meta name=\"description\" content=\"\">",
+                "<link rel=\"stylesheet\" type=\"text\/css\" href=\"styles.css\">",
+                "<title>Document<\/title>",
+                "<\/head>\r\n",
+                "<body>\r\n<header>\r\n<\/header>\r\n<main>\r\n<\/main>\r\n<footer>\r\n<\/footer>\r\n",
+                "<script src=\"scripts.js\"><\/script>\r\n<\/body>\r\n<\/html>"
+            ],
+            "description": "HTML boilerplate with meta, links, and CSS"
+        },
+        "HTML_boilerplate_scss": {
+            "prefix": "!scss",
+            "body": [
+                "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>",
+                "<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+                "<meta name=\"robots\" content=\"index,follow\">\r\n<meta name=\"description\" content=\"\">",
+                "<link rel=\"stylesheet\" type=\"text\/css\" href=\"styles.scss\">",
+                "<title>Document<\/title>",
+                "<\/head>\r\n",
+                "<body>\r\n<header>\r\n<\/header>\r\n<main>\r\n<\/main>\r\n<footer>\r\n<\/footer>\r\n",
+                "<script src=\"scripts.js\"><\/script>\r\n<\/body>\r\n<\/html>"
+            ],
+            "description": "HTML boilerplate with meta, links, and SCSS"
+        },
+        "CSS_boilerplate": {
+            "prefix": "!!",
+            "body": [
+                "/* Set default browser box sizing, margin and padding */",
+                "* {\r\nmargin: 0px;\r\npadding: 0px;\r\nbox-sizing: border-box;\r\n}",
+                "\r\n/* Set default pixel size to 10 for easier rem usage */",
+                "html {\r\nfont-size: 62.5%;\r\n}"
+            ],
+            "description": "Boilerplate starting point for CSS"
+        },
+        "SCSS_boilerplate": {
+            "prefix": "!!",
+            "body": [
+                "//Set default browser box sizing, margin and padding",
+                "* {\r\nmargin: 0px;\r\npadding: 0px;\r\nbox-sizing: border-box;\r\n}",
+                "\r\n//Set default pixel size to 10 for easier rem usage",
+                "html {\r\nfont-size: 62.5%;\r\n}"
+            ],
+            "description": "Boilerplate starting point for SCSS"
+        }
+    }
+]
