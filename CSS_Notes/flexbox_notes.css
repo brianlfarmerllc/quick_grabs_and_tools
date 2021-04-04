@@ -1,0 +1,33 @@
+.flexbox-parent-elements {
+  /* display type for using flexbox on parrent element to position children */
+  display: flex;
+
+  /* default direction is row for inline horizontal spread of elements, column allows for vertical spread */
+  flex-direction: column;
+
+  /* used to position elements across the x axis when in flex direction row */
+  /* used to position elements across the y axis when in flex direction column */
+  justify-content: center;
+
+  /* used to position elements across the y axis when in flex direction row */
+  /* used to position elements across the x axis when in flex direction column */
+  align-content: center;
+
+  /* Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line 
+  default is no wrap*/
+  flex-wrap: wrap;
+}
+
+.flexbox-child-elements {
+  /* flex - A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties */
+  /* flex-grow and flex shrink - A number specifying how much the item will grow or shrink 
+  relative to the rest of the flexible items */
+  /* flex-basis - The length of the element setting a minimum size*/
+  flex: 1 1 10rem;
+
+  /* Specifies the order of the flex items inside the same container */
+  order: 1;
+
+  /* Specifies the alignment for a flex item (overrides the flex container's align-items property) */
+  align-self: center;
+}
