@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #314131;
+}
+
+.introduction {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introduction h2 {
+  font-size: calc(4rem+1vh);
+}
+
+.introduction button {
+  border: none;
+  background-color: #314131;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.introduction button:hover {
+  background: lightblue;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+//Set default browser box sizing, margin and padding
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+//Set default pixel size to 10 for easier rem usage
+html {
+    font-size: 62.5%;
+}
+
+// Using SASS to create variables that convert to absolute values in your css. Variables start with a "$"
+
+$primaryColor: #314131;
+$bigText: calc(4rem+1vh);
+
+body {
+    display: flex;
+    color: $primaryColor;
+}

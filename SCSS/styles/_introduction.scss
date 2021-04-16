@@ -1,0 +1,29 @@
+// Using SASS to create variables that convert to absolute values in your css. Variables start with a "$"
+
+$primaryColor: #314131;
+$bigText: calc(4rem+1vh);
+
+//Able to use nesting of elements specific to a section to clean up code
+
+.introduction {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+        font-size: $bigText;
+    }
+
+    button {
+        border: none;
+        background-color: $primaryColor;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        // Nesting works with pseudo elements and classes
+        &:hover {
+            background: lightblue;
+        }
+    }
+}
