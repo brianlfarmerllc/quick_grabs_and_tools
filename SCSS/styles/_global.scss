@@ -19,3 +19,33 @@ body {
     display: flex;
     color: $primaryColor;
 }
+
+// helper mixin and ways it can be used
+
+// creates a reusable code with fixed values that can be used in youre scss with @include flex1()
+@mixin flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// creates a reusable code that allowes for arguments to be passed in to control flex direction,
+// justitify content, and align items that can be used in youre scss with
+// @include flex2(column, center, center)
+@mixin flex2($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// creates a reusable code that allowes for arguments to be passed in to control flex direction,
+// justitify content, and align items with set defaults. Then, you only need to specify the
+// values that change when you include the mixin. @include flex3($direction: column)
+@mixin flex3($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

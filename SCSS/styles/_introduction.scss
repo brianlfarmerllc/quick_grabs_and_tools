@@ -1,16 +1,11 @@
-// Using SASS to create variables that convert to absolute values in your css. Variables start with a "$"
-
-$primaryColor: #314131;
-$bigText: calc(4rem+1vh);
-
 //Able to use nesting of elements specific to a section to clean up code
 
 .introduction {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+    // includes the mixin created in the global styles with ability to pass in arguments to control
+    // flex direction, justitify content, and align items
+    @include flex2(column, center, center);
 
     h2 {
         font-size: $bigText;
@@ -18,6 +13,7 @@ $bigText: calc(4rem+1vh);
 
     button {
         border: none;
+        // this primary color is defined in the global styles allowing us access
         background-color: $primaryColor;
         padding: 1rem 3rem;
         cursor: pointer;

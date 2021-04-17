@@ -25,3 +25,8 @@ Start variables with the "$"
 ### Section specific files
 
 Ability to seperate section scss files by creating a seperate scss file for what ever sections you choose to easily locate the section you want to work with. The individual files should be started with a "_". example _introduction.scss. To incorporate the partial files into your main scss file write @import "filename"; into your main scss file. Order of import is important as they will compile in same order.
+
+### Helper Classes with Mixin
+
+Create reusable css code that operates like a function that you can pass variables into. A mixin is defined with the @mixin directive. The @include directive is used to include a mixin. Mixins accept arguments. This way you can pass variables to a mixin. It is also possible to define default values for mixin variables.    Then, you only need to specify the values that change when you include the mixin. Mixins should be defined above other imports or in global styles.
+
