@@ -22,7 +22,7 @@
                 "<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
                 "<meta name=\"robots\" content=\"index,follow\">\r\n<meta name=\"description\" content=\"\">",
                 "<link rel=\"icon\" href=\"\">",
-                "<link rel=\"stylesheet\" type=\"text\/css\" href=\"styles.scss\">",
+                "<link rel=\"stylesheet\" type=\"text\/css\" href=\"./styles/styles.css\">",
                 "<title>Document<\/title>",
                 "<\/head>\r\n",
                 "<body>\r\n<header>\r\n<\/header>\r\n<main>\r\n<\/main>\r\n<footer>\r\n<\/footer>\r\n",
