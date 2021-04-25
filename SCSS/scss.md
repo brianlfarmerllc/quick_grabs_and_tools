@@ -22,6 +22,31 @@ With the styles.scss file open you will have a section in the bottom vs code too
 
 Start variables with the "$" 
 
+$primaryColor: #314131;
+
+body {
+    color: $primaryColor;
+}
+
+### Nesting
+
+Able to nest elements with parrent elements that specifiy that that child belongs to the parrent also allows for pseuto elements and classes. 
+
+.intro {
+   display: flex;
+
+   h4 {
+       flex: 1 1 40rem;
+   }
+
+   button {
+       padding: 2rem;
+       &:hover{
+           background:black;
+       }
+   }
+}
+
 ### Section specific files
 
 Ability to seperate section scss files by creating a seperate scss file for what ever sections you choose to easily locate the section you want to work with. The individual files should be started with a "_". example _introduction.scss. To incorporate the partial files into your main scss file write @import "filename"; into your main scss file. Order of import is important as they will compile in same order.
