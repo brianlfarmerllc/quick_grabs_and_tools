@@ -1,3 +1,5 @@
+// MDN Documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+
 /* JavaScript Function ----- 
 
 A block of code designed to perform a particular task and is executed only when "something" invokes it (calls it). 
@@ -37,4 +39,4 @@ function myFunction(a, b) {
 
 var x = myFunction(4, 3); // Function is called, return value will end up in x
 
-console.log(x);
+console.log(x); // value of x is 12
