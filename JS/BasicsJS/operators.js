@@ -54,3 +54,34 @@ console.log(5 !== "5"); // This returns true
 console.log(10 > 2); // This would return a true
 console.log(10 < 2); // This would return a false
 console.log(10 >= 10); // This would return a true
+
+// Logical Operators --------
+
+// && Logical And -- Checks that both camparisons are true
+const hour = 18;
+const day = 6;
+
+if (hour >= 17 && day >= 5) {
+  console.log("Time for the weekend");
+} else {
+  console.log("Still working");
+}
+
+// || Logical OR -- Checks that at least one of the camparisons are true
+const hour = 18;
+const day = 6;
+
+if (hour >= 17 || day >= 5) {
+  console.log("Time for the weekend");
+} else {
+  console.log("Still working");
+}
+
+// ! Logical Not -- Checks that the camparison is not true
+const age = 17;
+
+if (hour != 17) {
+  console.log("Im seventeen");
+} else {
+  console.log("Im not only 17");
+}
