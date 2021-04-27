@@ -29,3 +29,26 @@ if (age >= 21) {
 } else {
   console.log("Sorry you are too young");
 }
+
+// Using the switch statement to handle multiple cases.
+
+const text = "apple";
+
+switch (text) {
+  case "banana":
+    console.log("I love bananas too");
+    break;
+  case "apple":
+    console.log("I hate apples");
+    break;
+  case "grape":
+    console.log("I hate grapes");
+    break;
+  case "orange":
+    console.log("I hate oranges");
+    break;
+
+  default:
+    console.log("what no bananas");
+    break;
+}
