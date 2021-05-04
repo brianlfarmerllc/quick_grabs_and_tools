@@ -28,8 +28,9 @@ document.getElementById();
 document.querySelector();
 document.querySelectorAll();
 
-// Can be converted to to a HTML collection if you select the query the parrent element.childrem
-document.querySelector().children;
+// Can be converted to to a HTML collection if you  query the parrent element.childrem
+let list = document.querySelector();
+let listItems = list.children;
 
 // Looping over Collections and Node Lists
 
