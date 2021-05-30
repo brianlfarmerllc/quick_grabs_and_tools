@@ -1,4 +1,4 @@
-// Basic Arithmetic Operators --------
+// ------ Basic Arithmetic Operators ------
 
 let test = 10;
 
@@ -29,7 +29,7 @@ console.log(test--);
 // adds 20 to test
 console.log((test += 20));
 
-// Comparison Operators --------
+// ------ Comparison Operators -------
 
 // == Is Equal To, but does not check the data type
 
@@ -85,3 +85,32 @@ if (hour != 17) {
 } else {
   console.log("Im not only 17");
 }
+
+// ------ Conditional (ternary) operator ------
+
+// The conditional operator is the only JavaScript operator that takes three operands.
+// The operator can have one of two values based on a condition.
+
+// The syntax is:
+condition ? val1 : val2;
+
+// If condition is true, the operator has the value of "val1". Otherwise it has the value of "val2".
+// You can use the conditional operator anywhere you would use a standard operator.
+
+// For example,
+
+var status = age >= 18 ? "adult" : "minor";
+
+// ------ Spread syntax (...) ------
+
+// allows an iterable such as an array expression or string to be expanded in places where zero or
+// more arguments (for function calls) or elements (for array literals) are expected, or an object
+// expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
+function sum(x, y, z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 3];
+
+console.log(sum(...numbers)); // expected output: 6

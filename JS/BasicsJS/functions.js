@@ -1,6 +1,6 @@
 // MDN Documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 
-/* JavaScript Function ----- 
+/*  ------ JavaScript Function ------
 
 A block of code designed to perform a particular task and is executed only when "something" invokes it (calls it). 
 
@@ -23,9 +23,10 @@ Function arguments are the values received by the function when it is invoked.
 
 Inside the function, the arguments (the parameters) behave as local variables. */
 
-myName("Brian"); // Function invocation
+// ------ Function invocation ------
+myName("Brian");
 
-/* Function Return
+/*  ------ Function Return ------
 
 When JavaScript reaches a return statement, the function will stop executing.
 
@@ -40,3 +41,36 @@ function myFunction(a, b) {
 var x = myFunction(4, 3); // Function is called, return value will end up in x
 
 console.log(x); // value of x is 12
+
+// ------ Callback Function and Highter Order Functions ------
+/* A callback function is a function passed into another function as an argument, 
+which is then invoked inside the outer function to complete some kind of routine or action. */
+/*A higher order function is a function that takes a function as an argument, or returns a function */
+
+const message = function () {
+  console.log("This message is shown after 3 seconds");
+};
+
+setTimeout(message, 3000);
+// message is the callback function that is passed as a argument in the setTimeout method
+// Set time out would be the higher order function since it takes the function message as a callback
+
+// ------ Arrow functions ----- Basic syntax
+
+// One param. With simple expression return is implicit and is not needed:
+(param) => expression;
+
+// Multiple params require parentheses. With simple expression return is not needed:
+(param1, paramN) => expression;
+
+// Multiline statements require body brackets and return:
+(param) => {
+  let a = 1;
+  return a + param;
+};
+
+// Multiple params require parentheses. Multiline statements require body brackets and return:
+(param1, paramN) => {
+  let a = 1;
+  return a + param1 + paramN;
+};

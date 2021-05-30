@@ -1,10 +1,10 @@
-// Primitive Data Types
+// ------ Primitive Data Types ------
 
 // Number - number values
 const day = 100;
 console.log(typeof day);
 
-// Strings - text values 
+// Strings - text values
 const dollars = "one hundred";
 console.log(typeof dollars);
 
@@ -16,7 +16,7 @@ console.log(typeof isLogged);
 let hairStyle;
 console.log(typeof hairStyle);
 
-// Null - value is set but settig value to nothing 
+// Null - value is set but settig value to nothing
 let min = null;
 console.log(typeof min);
 
@@ -25,6 +25,15 @@ console.log(typeof min);
 const me = Symbol();
 console.log(typeof me);
 
+// ------ Reference Datatypes ------
 
+// Objects - containers for named values called properties or methods.
+const tweet = {
+  name: Brian,
+  age: 36,
+  tweets: 1021,
+};
 
-// Objects 
+// Arrays - special variable, which can hold more than one value at a time.
+
+const names = ["Brian", "Amy", "Randy", "LeaAnn", "Mark", "Jane"];
